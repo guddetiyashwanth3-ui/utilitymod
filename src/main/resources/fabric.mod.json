@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "utilitymod",
+	"version": "${version}",
+	"name": "Utility-mod",
+	"description": "This is a Utility mod just as name suggests!",
+	"authors": [
+		"Redhon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/utilitymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.redhon.utilitymod.UtilityMod"
+		],
+		"fabric-datagen": [
+			"net.redhon.utilitymod.UtilityModDataGenerator"
+		],
+		"client": [
+			"net.redhon.utilitymod.UtilityModClient"
+		]
+	},
+	"mixins": [
+		"utilitymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
